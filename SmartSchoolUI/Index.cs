@@ -15,5 +15,10 @@ namespace SmartSchoolUI
         {
             InitializeComponent();
         }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
