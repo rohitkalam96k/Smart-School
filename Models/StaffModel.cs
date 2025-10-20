@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    class StaffModel
+   public  class StaffModel
     {
          public string id { get; set; }  // Primary key, not nullable
          public string firstName { get; set; }

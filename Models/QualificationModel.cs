@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    class QualificationModel
+    public class QualificationModel
     {
         public int qualificationId { get; set; }
         public string? stfId { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    class SalaryModel
+    public class SalaryModel
     {
         public int salaryId { get; set; }
         public string? id { get; set; }
