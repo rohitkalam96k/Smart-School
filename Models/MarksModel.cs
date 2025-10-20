@@ -7,30 +7,19 @@ namespace Models
 {
     class MarksModel
     {
-        public int pk_markid { get; set; }
-
-        public int? fk_academicid { get; set; }
-
-        public string? stdid { get; set; }
-
-        public int? totalmark { get; set; }
-
-        public int? obtainedmark { get; set; }
-
+        public int markId { get; set; }
+        public int? academicId { get; set; }
+        public string? stdId { get; set; }
+        public int? totalMark { get; set; }
+        public int? obtainedMark { get; set; }
         public int? math { get; set; }
-
         public int? science { get; set; }
-
         public int? english { get; set; }
-
         public int? history { get; set; }
-
         public int? geography { get; set; }
-
         public int? marathi { get; set; }
-
         public int? hindi { get; set; }
-
-        public DateTime? exam_date { get; set; }
+        public DateTime? examDate { get; set; }
+        
     }
 }

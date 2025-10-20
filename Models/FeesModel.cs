@@ -7,18 +7,13 @@ namespace Models
 {
     class FeesModel
     {
-        public int pk_feeid { get; set; }
-
-        public int? fk_academicid { get; set; }
-
-        public decimal? total_fees { get; set; }
-
+        public int feeId { get; set; }
+        public int? academicId { get; set; }
+        public decimal? totalFees { get; set; }
         public decimal? paid { get; set; }
-
         public decimal? due { get; set; }
+        public string? remarkDue { get; set; }
+        public string paymentStatus { get; set; } 
 
-        public string? remarkdue { get; set; }
-
-        public string payment_status { get; set; } 
-    }
+     }
 }

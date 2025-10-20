@@ -7,28 +7,17 @@ namespace Models
 {
     class StudentAccademicModel
     {
-        public int pk_academicid { get; set; }
-
-        public long? fk_std_abcid { get; set; }
-
-        public int? passingyear { get; set; }
-
-        public string @class { get; set; }
-
-        public decimal? oldmarks { get; set; }
-
-        public string schoolname { get; set; }
-
-        public int? currentyear { get; set; }
-
-        public string currentclass { get; set; }
-
+        public int academicId { get; set; }
+        public long? stdAbcId { get; set; }
+        public int? passingYear { get; set; }
+        public decimal? oldMarks { get; set; }
+        public string schoolName { get; set; }
+        public int? currentYear { get; set; }
+        public string currentClass { get; set; }
         public string division { get; set; }
-
-        public int? rollno { get; set; }
-
-        public DateTime? regdate { get; set; }
-
-        public string currentschoolname { get; set; }
+        public int? rollNo { get; set; }
+        public DateTime? registrationDate { get; set; }
+        public string currentSchoolName { get; set; }
+      
     }
 }

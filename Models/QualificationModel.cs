@@ -7,16 +7,11 @@ namespace Models
 {
     class QualificationModel
     {
-        public int pk_stf_qualificationid { get; set; }
-
-        public string? fk_stf_id { get; set; }
-
-        public string? stf_highestqualification { get; set; }
-
-        public string? stf_specialisation { get; set; }
-
-        public string? stf_certification { get; set; }
-
-        public int? stf_experienceyear { get; set; }
+        public int qualificationId { get; set; }
+        public string? stfId { get; set; }
+        public string? stfHighestQualification { get; set; }
+        public string? stfSpecialisation { get; set; }
+        public string? stfCertification { get; set; }
+        public int? stfExperienceYear { get; set; }  
     }
 }

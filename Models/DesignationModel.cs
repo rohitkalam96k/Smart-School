@@ -7,10 +7,10 @@ namespace Models
 {
     class DesignationModel
     {
-        public int pk_stf_designationid { get; set; }
+        public int designationId { get; set; }
 
-        public string stf_designation { get; set; }
+        public string designation { get; set; }
 
-        public string stf_department { get; set; }
+        public string department { get; set; }
     }
 }
