@@ -8,10 +8,10 @@ namespace Models
     public class QualificationModel
     {
         public int qualificationId { get; set; }
-        public string? stfId { get; set; }
-        public string? stfHighestQualification { get; set; }
-        public string? stfSpecialisation { get; set; }
-        public string? stfCertification { get; set; }
-        public int? stfExperienceYear { get; set; }  
+        public string? id { get; set; }
+        public string? highestQualification { get; set; }
+        public string? specialisation { get; set; }
+        public string? certification { get; set; }
+        public int? experienceYear { get; set; }  
     }
 }

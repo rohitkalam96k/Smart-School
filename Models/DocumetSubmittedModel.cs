@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    class DocumetSubmittedModel
+    public class DocumetSubmittedModel
     {
         public int documentId { get; set; }
         public int? academicId { get; set; }

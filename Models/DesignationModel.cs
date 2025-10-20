@@ -5,12 +5,11 @@ using System.Text;
 
 namespace Models
 {
-    class DesignationModel
+    public class DesignationModel
     {
         public int designationId { get; set; }
-
         public string designation { get; set; }
-
         public string department { get; set; }
+        
     }
 }

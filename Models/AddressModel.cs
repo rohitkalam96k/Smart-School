@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    class AddressModel
+    public class AddressModel
     {
         public int addressId { get; set; }
         public string country { get; set; }
