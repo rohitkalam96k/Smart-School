@@ -12,6 +12,7 @@ namespace Models
         public string state { get; set; }
         public string district { get; set; }
         public string city { get; set; }
+        public string street { get; set; }
         public string pincode { get; set; }
  
         }
