@@ -24,7 +24,8 @@ namespace Models
         public string category { get; set; }
         public string caste { get; set; }
         public string mothertongue { get; set; }
-        public int? addressId { get; set; }
+        public int addressId { get; set; }
+        public AddressModel address  { get; set; }
         
 
     }
