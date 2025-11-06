@@ -8,7 +8,7 @@ namespace DAL
 {
     public class DBConnection
     {
-        private static string connectionStr = "server=localhost;database=test_students;uid=root;pwd=root";
+        private static string connectionStr = "server=localhost;database=schoolmanagement;uid=root;pwd=root";
 
         public static MySqlConnection GetConnection()
         {
