@@ -11,6 +11,7 @@ namespace Models
         public string id { get; set; }
         public decimal salaryAmount { get; set; }
         public long bankaccountNo { get; set; }
+
         public string ifsc { get; set; }
         public string pan { get; set; }
         public string salaryType { get; set; }
