@@ -13,35 +13,54 @@ namespace DAL
         // Insert a new student
 
         public int Insert(StudentModel s1)
+<<<<<<< HEAD
         {
             using (MySqlConnection con= DBConnection.GetConnection())
             {
                 con.Open();
                 string q = @"Insert into StudentData(abcId,firstName,middleName,lastName,motherName,gender,dob,mobile,parentMobile,email,aadharNo,photo,localAddress,religion,category,caste,mothertongue,addressId) values (@abcId,@fn,@midn,@ln,@mon,@gen,@dob,@mob,@pmob,@email,@aadharno,@photo,@localadd,@relig,@cat,@caste,@mtng,@addid);";
+=======
+{
+    using (MySqlConnection con = DBConnection.GetConnection())
+    {
+        con.Open();
+        string q = @"INSERT INTO studentData (
+                        std_abcid, std_firstname, std_midlename, std_lastname, std_motherName,
+                        std_gender, std_DOB, std_mobile, std_parentMobile, std_email,
+                        std_adharno, std_photo, std_localaddress, std_religion, std_category,
+                        std_cast, std_mothertoung, fk_std_addressid
+                    ) VALUES (
+                        @abcid, @fn, @midn, @ln, @mon,
+                        @gen, @dob, @mob, @pmob, @email,
+                        @aadharno, @photo, @localadd, @relig, @cat,
+                        @caste, @mtng, @addid
+                    );";
+>>>>>>> 26c5716 (Update This file)
 
-                MySqlCommand cmd = new MySqlCommand(q, con);
-                cmd.Parameters.AddWithValue("@abcid", s1.abcId);
-                cmd.Parameters.AddWithValue("@fn", s1.firstName);
-                cmd.Parameters.AddWithValue("@midn", s1.middleName);
-                cmd.Parameters.AddWithValue("@ln", s1.lastName);
-                cmd.Parameters.AddWithValue("@mon", s1.motherName);
-                cmd.Parameters.AddWithValue("@gen", s1.gender);
-                cmd.Parameters.AddWithValue("@dob", s1.dob);
-                cmd.Parameters.AddWithValue("@mob", s1.mobile);
-                cmd.Parameters.AddWithValue("@pmob", s1.parentMobile);
-                cmd.Parameters.AddWithValue("@email", s1.email);
-                cmd.Parameters.AddWithValue("@aadharno", s1.aadharNo);
-                cmd.Parameters.AddWithValue("@photo", s1.photo);
-                cmd.Parameters.AddWithValue("@localadd", s1.localAddress);
-                cmd.Parameters.AddWithValue("@relg", s1.religion);
-                cmd.Parameters.AddWithValue("@cat", s1.category);
-                cmd.Parameters.AddWithValue("@caste", s1.caste);
-                cmd.Parameters.AddWithValue("@mtng", s1.mothertongue);
-                cmd.Parameters.AddWithValue("@addid", s1.addressId);
-                return cmd.ExecuteNonQuery();
-            }
+        MySqlCommand cmd = new MySqlCommand(q, con);
+        cmd.Parameters.AddWithValue("@abcid", s1.abcId);
+        cmd.Parameters.AddWithValue("@fn", s1.firstName);
+        cmd.Parameters.AddWithValue("@midn", s1.middleName);
+        cmd.Parameters.AddWithValue("@ln", s1.lastName);
+        cmd.Parameters.AddWithValue("@mon", s1.motherName);
+        cmd.Parameters.AddWithValue("@gen", s1.gender);
+        cmd.Parameters.AddWithValue("@dob", s1.dob);
+        cmd.Parameters.AddWithValue("@mob", s1.mobile);
+        cmd.Parameters.AddWithValue("@pmob", s1.parentMobile);
+        cmd.Parameters.AddWithValue("@email", s1.email);
+        cmd.Parameters.AddWithValue("@aadharno", s1.aadharNo);
+        cmd.Parameters.AddWithValue("@photo", s1.photo);
+        cmd.Parameters.AddWithValue("@localadd", s1.localAddress);
+        cmd.Parameters.AddWithValue("@relig", s1.religion);
+        cmd.Parameters.AddWithValue("@cat", s1.category);
+        cmd.Parameters.AddWithValue("@caste", s1.caste);
+        cmd.Parameters.AddWithValue("@mtng", s1.mothertongue);
+        cmd.Parameters.AddWithValue("@addid", s1.addressId);
 
-        }
+        return cmd.ExecuteNonQuery();
+    }
+}
+
 
         // Get all students
 
