@@ -9,23 +9,64 @@ namespace BLL
 {
     class StudentRegistrationBLL
     {
-        StudentModel s1 = new StudentModel();
+        StudentDAL _dal = new StudentDAL();
+
         public string AddStudent(StudentModel std)
+        {
+
+            string error = validate(std);
+
+            if(!string.IsNullOrEmpty(error))
+            {
+                if (_dal.Insert(std) > 0)
+                    error= "Student Added";
+                else
+                    error= "Failed to Add student";
+            }
+            return error;
+
+            
+        }
+
+        public string UpdateStudent(StudentModel std)
+        {
+
+            string error = validate(std);
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                if (_dal.UpdateStudent(std))
+                    error = "Student Updated";
+                else
+                    error = "Failed to Update student";
+            }
+            return error;
+
+
+        }
+
+        public StudentModel GetStudentByabcId(int abcId)
+        {
+            return _dal.GetStudentByabcId(abcId);
+        }
+
+
+        private string validate(StudentModel std)
         {
             // abc id
             if (std.abcId <= 0)
                 return "Please enter a valid student ID";
             //first name
-            if (s1.firstName == "")
+            if (std.firstName == "")
                 return "Please enter your first name";
             //last name
-            if (s1.lastName == "")
+            if (std.lastName == "")
                 return "Please enter your last name";
             //middle name
-            if (s1.middleName == "")
+            if (std.middleName == "")
                 return "Please enter your middle name";
             //mother name
-            if (s1.motherName == "")
+            if (std.motherName == "")
                 return "Please enter your mother name";
             //gender
             if (string.IsNullOrEmpty(std.gender))
@@ -70,26 +111,8 @@ namespace BLL
             if (std.addressId != null && std.addressId <= 0)
                 return "Invalid address ID";
 
-
-
-            else
-                return "Student registered succesfully";
-                DAL.insert(std);
+            return string.Empty;
         }
 
-        public string updateStudent()
-        {
-
-        }
-
-        public string displayStudent()
-        { 
-        
-        }
-
-        public string displayAll()
-        { 
-        
-        }
     }
 }

@@ -10,7 +10,8 @@ namespace BLL
     
     class DocumentSubmitteddBLL
     {
-        DocumetSubmittedModel s1 = new DocumetSubmittedModel();
+        
+        StudentDAL _dal = new StudentDAL();
 
         public string AddDocument(DocumetSubmittedModel ds)
         {
@@ -27,12 +28,9 @@ namespace BLL
             
             else
                 return "Documents registered succesfully";
-                DAL.insert(ds);
+                
         }
 
-        public string updateStudent()
-        {
 
-        }
     }
 }
