@@ -17,7 +17,7 @@ namespace DAL
             using (MySqlConnection con= DBConnection.GetConnection())
             {
                 con.Open();
-                string q = @"Insert into StudentModel(abcId,firstName,middleName,lastName,motherName,gender,dob,mobile,parentMobile,email,aadharNo,photo,localAddress,religion,category,caste,mothertongue,addressId) values (@abcId,@fn,@midn,@ln,@mon,@gen,@dob,@mob,@pmob,@email,@aadharno,@photo,@localadd,@relig,@cat,@caste,@mtng,@addid);";
+                string q = @"Insert into StudentData(abcId,firstName,middleName,lastName,motherName,gender,dob,mobile,parentMobile,email,aadharNo,photo,localAddress,religion,category,caste,mothertongue,addressId) values (@abcId,@fn,@midn,@ln,@mon,@gen,@dob,@mob,@pmob,@email,@aadharno,@photo,@localadd,@relig,@cat,@caste,@mtng,@addid);";
 
                 MySqlCommand cmd = new MySqlCommand(q, con);
                 cmd.Parameters.AddWithValue("@abcid", s1.abcId);
@@ -46,12 +46,10 @@ namespace DAL
         // Get all students
 
         public StudentModel GetStudentByabcId(int abcId)
-        {
-            StudentModel student = null;
-
+        {    
             using (MySqlConnection con1 = DBConnection.GetConnection())
             {
-                string q1 = "SELECT abcId,firstName,middleName,lastName,motherName,gender,dob,mobile,parentMobile,email,aadharNo,photo,localAddress,religion,category,caste,mothertongue,addressId FROM StudentModel WHERE abcId = @abcid";
+                string q1 = "SELECT abcId,firstName,middleName,lastName,motherName,gender,dob,mobile,parentMobile,email,aadharNo,photo,localAddress,religion,category,caste,mothertongue,addressId FROM StudentData WHERE abcId = @abcid";
                 MySqlCommand cmd = new MySqlCommand(q1, con1);
                 cmd.Parameters.AddWithValue("@abcid", abcId);
 
@@ -60,7 +58,7 @@ namespace DAL
                 {
                     if (reader.Read())
                     {
-                        student = new StudentModel
+                        return new StudentModel
                         {                          
                             abcId = reader.GetInt32("abcId"),
                             firstName = reader["firstName"].ToString(),
@@ -85,16 +83,16 @@ namespace DAL
                     }
                 }
             }
-            return student;
+            return null;
         }
 
         // Update student details
-        public int UpdateStudent(StudentModel s1)
+        public bool UpdateStudent(StudentModel s1)
         {
             using (MySqlConnection con = DBConnection.GetConnection())
             {
                 con.Open();
-                string query = @"UPDATE Students SET 
+                string query = @"UPDATE StudentData SET 
             firstName = @fn, middleName = @mn, lastName = @ln, motherName = @mon,
             gender = @g, dob = @dob, mobile = @mob, parentMobile = @pmob,
             email = @email, aadharNo = @aadharno, photo = @photo, localAddress = @localadd,
@@ -116,12 +114,12 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@photo", s1.photo);
                 cmd.Parameters.AddWithValue("@localadd", s1.localAddress);
                 cmd.Parameters.AddWithValue("@relg", s1.religion);
-                smd.Parameters.AddWithValue("@cat", s1.category);
+                cmd.Parameters.AddWithValue("@cat", s1.category);
                 cmd.Parameters.AddWithValue("@caste", s1.caste);
                 cmd.Parameters.AddWithValue("@mtng", s1.mothertongue);
                 cmd.Parameters.AddWithValue("@addid", s1.addressId);
 
-                return cmd.ExecuteNonQuery();
+                return cmd.ExecuteNonQuery() >0;
             }
         }
 
