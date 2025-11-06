@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Models
 {
-    class StudentAccademicModel
+   public class StudentAccademicModel
     {
         public int academicId { get; set; }
-        public long? stdAbcId { get; set; }
+        public long? abcId { get; set; }
         public int? passingYear { get; set; }
         public decimal? oldMarks { get; set; }
         public string schoolName { get; set; }
