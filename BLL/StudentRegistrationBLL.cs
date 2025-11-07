@@ -7,7 +7,7 @@ using DAL;
 
 namespace BLL
 {
-    class StudentRegistrationBLL
+    public class StudentRegistrationBLL
     {
         StudentDAL _dal = new StudentDAL();
 
