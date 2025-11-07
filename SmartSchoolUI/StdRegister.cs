@@ -16,6 +16,7 @@ namespace SmartSchoolUI
     {
 
         StudentRegistrationBLL _bll = new StudentRegistrationBLL();
+
         public StdRegister()
         {
             InitializeComponent();
@@ -73,11 +74,11 @@ namespace SmartSchoolUI
 
             // Gender radio buttons
             if (rdoMale.Checked)
-                student.gender = "Male";
+                student.gender = "M";
             else if (rdoFemale.Checked)
-                student.gender = "Female";
+                student.gender = "F";
             else if (rdoOther.Checked)
-                student.gender = "Other";
+                student.gender = "O";
 
             // Date of Birth
             student.dob = dtpDob.Value;
@@ -103,7 +104,7 @@ namespace SmartSchoolUI
 
             //photo path
 
-
+            student.photo = txtPath.Text;
 
             return student;
         }
@@ -136,6 +137,9 @@ namespace SmartSchoolUI
             // ComboBoxes
             cmbCategory.SelectedIndex = -1;
             cmbState.SelectedIndex = -1;
+
+            txtPath.Clear();
+           
         }
 
         // Clear all Fields
@@ -174,25 +178,10 @@ namespace SmartSchoolUI
         private void btnRegister_Click(object sender, EventArgs e)
         {
             StudentModel student = GetStudentFormData();
-            Console.WriteLine("=== Student Data ===");
-            Console.WriteLine("ABC ID: " + student.abcId);
-            Console.WriteLine("First Name: " + student.firstName);
-            Console.WriteLine("Middle Name: " + student.middleName);
-            Console.WriteLine("Last Name: " + student.lastName);
-            Console.WriteLine("Mother Name: " + student.motherName);
-            Console.WriteLine("Gender: " + student.gender);
-            Console.WriteLine("DOB: " + (student.dob.HasValue ? student.dob.Value.ToString("dd-MM-yyyy") : ""));
-            Console.WriteLine("Student Mobile: " + student.mobile);
-            Console.WriteLine("Parent Mobile: " + student.parentMobile);
-            Console.WriteLine("Email: " + student.email);
-            Console.WriteLine("Aadhar No: " + student.aadharNo);
-            Console.WriteLine("Local Address: " + student.localAddress);
-            Console.WriteLine("Religion: " + student.religion);
-            Console.WriteLine("Category: " + student.category);
-            Console.WriteLine("Caste: " + student.caste);
-            Console.WriteLine("Mother Tongue: " + student.mothertongue);
-            Console.WriteLine("Photo Path: " + student.photo);
-            Console.WriteLine("Address ID: " + (student.addressId.HasValue ? student.addressId.Value.ToString() : ""));
+            string result = _bll.AddStudent(student);
+            MessageBox.Show(result);
+
+            //ClearAllFields();
         }
 
 

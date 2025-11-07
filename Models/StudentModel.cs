@@ -7,6 +7,10 @@ namespace Models
 {
     public class StudentModel
     {
+        public int regid { get; set; }
+        public DateTime regdate { get; set; }
+
+
         public long abcId { get; set; }
         public string firstName { get; set; }
         public string middleName { get; set; }
