@@ -16,7 +16,7 @@ namespace BLL
 
             string error = validate(std);
 
-            if(!string.IsNullOrEmpty(error))
+            if(string.IsNullOrEmpty(error))
             {
                 if (_dal.Insert(std) > 0)
                     error= "Student Added";
