@@ -5,12 +5,17 @@ using System.Text;
 
 namespace Models
 {
+<<<<<<< HEAD
     public class StudentModel
     {
         public int regid { get; set; }
         public DateTime regdate { get; set; }
 
 
+=======
+    class StudentModel
+    {
+>>>>>>> 233690be0a29c2ad296243fd7a6d54a190d4695c
         public long abcId { get; set; }
         public string firstName { get; set; }
         public string middleName { get; set; }
