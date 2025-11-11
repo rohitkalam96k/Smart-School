@@ -15,5 +15,22 @@ namespace SmartSchoolUI
         {
             InitializeComponent();
         }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StdRegister register = new StdRegister();
+            register.Show();
+        }
+
+        private void studentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StdList list = new StdList();
+            list.Show();
+        }
     }
 }
