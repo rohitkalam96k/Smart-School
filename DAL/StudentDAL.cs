@@ -20,13 +20,13 @@ namespace DAL
                 string q = @"INSERT INTO studentData (
                                 std_abcid, std_firstname, std_midlename, std_lastname, std_motherName,
                                 std_gender, std_DOB, std_mobile, std_parentMobile, std_email,
-                                std_adharno, std_photo, std_localaddress, std_religion, std_category,
-                                std_cast, std_mothertoung, fk_std_addressid
+                                std_adharno, std_photo, std_localaddress, std_category,
+                                std_cast
                             ) VALUES (
                                 @abcid, @fn, @midn, @ln, @mon,
                                 @gen, @dob, @mob, @pmob, @email,
-                                @aadharno, @photo, @localadd, @relig, @cat,
-                                @caste, @mtng, @addid
+                                @aadharno, @photo, @localadd, @cat,
+                                @caste
                             );";
 
 
@@ -44,12 +44,9 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@aadharno", s1.aadharNo);
                 cmd.Parameters.AddWithValue("@photo", s1.photo);
                 cmd.Parameters.AddWithValue("@localadd", s1.localAddress);
-                cmd.Parameters.AddWithValue("@relig", s1.religion);
                 cmd.Parameters.AddWithValue("@cat", s1.category);
                 cmd.Parameters.AddWithValue("@caste", s1.caste);
-                cmd.Parameters.AddWithValue("@mtng", s1.mothertongue);
-                cmd.Parameters.AddWithValue("@addid", s1.addressId);
-
+                Console.WriteLine(s1.gender);
                 return cmd.ExecuteNonQuery();
             }
         }

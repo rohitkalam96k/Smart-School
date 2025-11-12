@@ -7,7 +7,7 @@ using DAL;
 
 namespace BLL
 {
-    class StudentRegistrationBLL
+    public class StudentRegistrationBLL
     {
         StudentDAL _dal = new StudentDAL();
 
@@ -16,7 +16,7 @@ namespace BLL
 
             string error = validate(std);
 
-            if(!string.IsNullOrEmpty(error))
+            if(string.IsNullOrEmpty(error))
             {
                 if (_dal.Insert(std) > 0)
                     error= "Student Added";
