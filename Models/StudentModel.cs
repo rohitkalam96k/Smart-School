@@ -23,12 +23,16 @@ namespace Models
         public string email { get; set; }
         public string aadharNo { get; set; }
         public string photo { get; set; }
-        public string localAddress { get; set; }
         public string religion { get; set; }
         public string category { get; set; }
         public string caste { get; set; }
         public string mothertongue { get; set; }
-        public int? addressId { get; set; }
+        public string localAddress { get; set; }
+        public string country { get; set; }
+        public string state { get; set; }
+        public string district { get; set; }
+        public string city { get; set; }
+        public int pincode { get; set; }
         
 
     }
