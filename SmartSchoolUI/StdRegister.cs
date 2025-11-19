@@ -16,6 +16,10 @@ namespace SmartSchoolUI
     {
 
         StudentRegistrationBLL _bll = new StudentRegistrationBLL();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
         public StdRegister()
         {
             InitializeComponent();
@@ -73,11 +77,19 @@ namespace SmartSchoolUI
 
             // Gender radio buttons
             if (rdoMale.Checked)
+<<<<<<< HEAD
                 student.gender = "Male";
             else if (rdoFemale.Checked)
                 student.gender = "Female";
             else if (rdoOther.Checked)
                 student.gender = "Other";
+=======
+                student.gender = "M";
+            else if (rdoFemale.Checked)
+                student.gender = "F";
+            else if (rdoOther.Checked)
+                student.gender = "O";
+>>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
 
             // Date of Birth
             student.dob = dtpDob.Value;
@@ -103,7 +115,11 @@ namespace SmartSchoolUI
 
             //photo path
 
+<<<<<<< HEAD
 
+=======
+            student.photo = txtPath.Text;
+>>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
 
             return student;
         }
@@ -136,6 +152,12 @@ namespace SmartSchoolUI
             // ComboBoxes
             cmbCategory.SelectedIndex = -1;
             cmbState.SelectedIndex = -1;
+<<<<<<< HEAD
+=======
+
+            txtPath.Clear();
+           
+>>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
         }
 
         // Clear all Fields
@@ -174,6 +196,7 @@ namespace SmartSchoolUI
         private void btnRegister_Click(object sender, EventArgs e)
         {
             StudentModel student = GetStudentFormData();
+
             Console.WriteLine("=== Student Data ===");
             Console.WriteLine("ABC ID: " + student.abcId);
             Console.WriteLine("First Name: " + student.firstName);
@@ -193,6 +216,11 @@ namespace SmartSchoolUI
             Console.WriteLine("Mother Tongue: " + student.mothertongue);
             Console.WriteLine("Photo Path: " + student.photo);
             Console.WriteLine("Address ID: " + (student.addressId.HasValue ? student.addressId.Value.ToString() : ""));
+            string result = _bll.AddStudent(student);
+            MessageBox.Show(result);
+
+            //ClearAllFields();
+
         }
 
 

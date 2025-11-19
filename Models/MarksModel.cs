@@ -19,6 +19,7 @@ namespace Models
         public int geography { get; set; }
         public int marathi { get; set; }
         public int hindi { get; set; }
+
         public DateTime examDate { get; set; }
         
     }

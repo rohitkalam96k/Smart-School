@@ -71,6 +71,9 @@ FOREIGN KEY (fk_std_addressid) REFERENCES addresstable(addressid)
 
 );
 
+-- added two more fields to student data regid and regdate
+alter table studentData add column regid int unique auto_increment, add column regdate timestamp not null DEFAULT current_timestamp;
+
 CREATE TABLE studentAcademicData (
     academicid INT AUTO_INCREMENT PRIMARY KEY,
     std_abcid BIGINT,

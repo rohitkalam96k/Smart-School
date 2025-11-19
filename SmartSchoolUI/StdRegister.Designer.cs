@@ -142,10 +142,17 @@
             this.rdoOther.AutoSize = true;
             this.rdoOther.Location = new System.Drawing.Point(218, 36);
             this.rdoOther.Name = "rdoOther";
+
             this.rdoOther.Size = new System.Drawing.Size(65, 21);
             this.rdoOther.TabIndex = 1;
             this.rdoOther.TabStop = true;
             this.rdoOther.Text = "Other";
+
+            this.rdoOther.Size = new System.Drawing.Size(40, 21);
+            this.rdoOther.TabIndex = 1;
+            this.rdoOther.TabStop = true;
+            this.rdoOther.Text = "O";
+
             this.rdoOther.UseVisualStyleBackColor = true;
             // 
             // rdoFemale
@@ -153,10 +160,17 @@
             this.rdoFemale.AutoSize = true;
             this.rdoFemale.Location = new System.Drawing.Point(112, 40);
             this.rdoFemale.Name = "rdoFemale";
+
             this.rdoFemale.Size = new System.Drawing.Size(75, 21);
             this.rdoFemale.TabIndex = 1;
             this.rdoFemale.TabStop = true;
             this.rdoFemale.Text = "Female";
+
+            this.rdoFemale.Size = new System.Drawing.Size(37, 21);
+            this.rdoFemale.TabIndex = 1;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "F";
+
             this.rdoFemale.UseVisualStyleBackColor = true;
             // 
             // rdoMale
@@ -164,10 +178,17 @@
             this.rdoMale.AutoSize = true;
             this.rdoMale.Location = new System.Drawing.Point(37, 36);
             this.rdoMale.Name = "rdoMale";
+
             this.rdoMale.Size = new System.Drawing.Size(59, 21);
             this.rdoMale.TabIndex = 0;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "Male";
+
+            this.rdoMale.Size = new System.Drawing.Size(40, 21);
+            this.rdoMale.TabIndex = 0;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "M";
+
             this.rdoMale.UseVisualStyleBackColor = true;
             // 
             // txtMotherName
