@@ -12,7 +12,7 @@ namespace Models
         public string tc { get; set; }
         public string adharcard { get; set; }
         public string oldMarksheet { get; set; }
-        public DateTime? submissionDate { get; set; }
+        public DateTime submissionDate { get; set; }
    
     }
 }
