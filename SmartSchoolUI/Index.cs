@@ -15,7 +15,6 @@ namespace SmartSchoolUI
         {
             InitializeComponent();
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textPassword.Text))
@@ -25,7 +24,11 @@ namespace SmartSchoolUI
             }
             string password=textPassword.Text;
             MessageBox.Show("Your Password "+password);
-
         }
+        private void Index_Load(object sender, EventArgs e)
+        {
+           
+        }
+       
     }
 }

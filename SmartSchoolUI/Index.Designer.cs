@@ -37,7 +37,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+
             this.label1.Location = new System.Drawing.Point(162, 34);
+            this.label1.Location = new System.Drawing.Point(117, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
@@ -85,6 +87,14 @@
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
+
+            this.ClientSize = new System.Drawing.Size(467, 318);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Index";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Index_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
