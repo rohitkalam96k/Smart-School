@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="StdList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="StdList.resx">
       <DependentUpon>StdList.cs</DependentUpon>
     </EmbeddedResource>

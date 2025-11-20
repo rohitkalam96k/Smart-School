@@ -16,9 +16,20 @@ namespace SmartSchoolUI
             InitializeComponent();
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textPassword.Text))
+            {
+                MessageBox.Show("Please Enter Your Password");
+                return;
+            }
+            string password = textPassword.Text;
+            MessageBox.Show("Your Password " + password);
+        }
+
         private void Index_Load(object sender, EventArgs e)
         {
-            
+            // any startup code can go here
         }
 
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)

@@ -107,10 +107,7 @@ namespace BLL
             if (!string.IsNullOrEmpty(std.mothertongue) && std.mothertongue.Length > 50)
                 return "Mother tongue name is too long";
 
-            // Address ID validation
-            if (std.addressId != null && std.addressId <= 0)
-                return "Invalid address ID";
-
+            
             return string.Empty;
         }
 
