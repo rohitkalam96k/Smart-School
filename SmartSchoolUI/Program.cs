@@ -15,7 +15,7 @@ namespace SmartSchoolUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StdRegistration());
+            Application.Run(new StdList());
         }
     }
 }
