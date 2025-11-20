@@ -16,7 +16,10 @@ namespace SmartSchoolUI
     {
 
         StudentRegistrationBLL _bll = new StudentRegistrationBLL();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
         public StdRegister()
         {
             InitializeComponent();
@@ -74,11 +77,19 @@ namespace SmartSchoolUI
 
             // Gender radio buttons
             if (rdoMale.Checked)
+<<<<<<< HEAD
                 student.gender = "M";
             else if (rdoFemale.Checked)
                 student.gender = "F";
             else if (rdoOther.Checked)
                 student.gender = "O";
+=======
+                student.gender = "Male";
+            else if (rdoFemale.Checked)
+                student.gender = "Female";
+            else if (rdoOther.Checked)
+                student.gender = "Other";
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
 
             // Date of Birth
             student.dob = dtpDob.Value;
@@ -104,7 +115,11 @@ namespace SmartSchoolUI
 
             //photo path
 
+<<<<<<< HEAD
             student.photo = txtPath.Text;
+=======
+
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
 
             return student;
         }
@@ -137,9 +152,12 @@ namespace SmartSchoolUI
             // ComboBoxes
             cmbCategory.SelectedIndex = -1;
             cmbState.SelectedIndex = -1;
+<<<<<<< HEAD
 
             txtPath.Clear();
            
+=======
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
         }
 
         // Clear all Fields
@@ -178,10 +196,32 @@ namespace SmartSchoolUI
         private void btnRegister_Click(object sender, EventArgs e)
         {
             StudentModel student = GetStudentFormData();
+<<<<<<< HEAD
             string result = _bll.AddStudent(student);
             MessageBox.Show(result);
 
             //ClearAllFields();
+=======
+            Console.WriteLine("=== Student Data ===");
+            Console.WriteLine("ABC ID: " + student.abcId);
+            Console.WriteLine("First Name: " + student.firstName);
+            Console.WriteLine("Middle Name: " + student.middleName);
+            Console.WriteLine("Last Name: " + student.lastName);
+            Console.WriteLine("Mother Name: " + student.motherName);
+            Console.WriteLine("Gender: " + student.gender);
+            Console.WriteLine("DOB: " + (student.dob.HasValue ? student.dob.Value.ToString("dd-MM-yyyy") : ""));
+            Console.WriteLine("Student Mobile: " + student.mobile);
+            Console.WriteLine("Parent Mobile: " + student.parentMobile);
+            Console.WriteLine("Email: " + student.email);
+            Console.WriteLine("Aadhar No: " + student.aadharNo);
+            Console.WriteLine("Local Address: " + student.localAddress);
+            Console.WriteLine("Religion: " + student.religion);
+            Console.WriteLine("Category: " + student.category);
+            Console.WriteLine("Caste: " + student.caste);
+            Console.WriteLine("Mother Tongue: " + student.mothertongue);
+            Console.WriteLine("Photo Path: " + student.photo);
+            Console.WriteLine("Address ID: " + (student.addressId.HasValue ? student.addressId.Value.ToString() : ""));
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
         }
 
 

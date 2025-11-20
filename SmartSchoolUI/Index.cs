@@ -30,8 +30,11 @@ namespace SmartSchoolUI
            
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
        
 =======
+=======
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
 
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -44,6 +47,9 @@ namespace SmartSchoolUI
             StdList list = new StdList();
             list.Show();
         }
+<<<<<<< HEAD
 >>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
+=======
+>>>>>>> 5fdb6affe82ed4eaf514066285de6287e4cd7289
     }
 }
