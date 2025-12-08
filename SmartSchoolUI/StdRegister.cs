@@ -16,10 +16,10 @@ namespace SmartSchoolUI
     {
 
         StudentRegistrationBLL _bll = new StudentRegistrationBLL();
-<<<<<<< HEAD
-=======
 
->>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
+
+
+
         public StdRegister()
         {
             InitializeComponent();
@@ -77,19 +77,19 @@ namespace SmartSchoolUI
 
             // Gender radio buttons
             if (rdoMale.Checked)
-<<<<<<< HEAD
+
                 student.gender = "Male";
             else if (rdoFemale.Checked)
                 student.gender = "Female";
             else if (rdoOther.Checked)
                 student.gender = "Other";
-=======
+            else if (rdoMale.Checked)
                 student.gender = "M";
             else if (rdoFemale.Checked)
                 student.gender = "F";
             else if (rdoOther.Checked)
                 student.gender = "O";
->>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
+
 
             // Date of Birth
             student.dob = dtpDob.Value;
@@ -115,11 +115,6 @@ namespace SmartSchoolUI
 
             //photo path
 
-<<<<<<< HEAD
-
-=======
-            student.photo = txtPath.Text;
->>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
 
             return student;
         }
@@ -152,12 +147,6 @@ namespace SmartSchoolUI
             // ComboBoxes
             cmbCategory.SelectedIndex = -1;
             cmbState.SelectedIndex = -1;
-<<<<<<< HEAD
-=======
-
-            txtPath.Clear();
-           
->>>>>>> 754a88d3c5ec7738356eefe0e77e15a7ac2fe455
         }
 
         // Clear all Fields
@@ -220,6 +209,11 @@ namespace SmartSchoolUI
             MessageBox.Show(result);
 
             //ClearAllFields();
+
+        }
+
+        private void StdRegister_Load(object sender, EventArgs e)
+        {
 
         }
 

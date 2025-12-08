@@ -33,6 +33,8 @@ namespace Models
         public string district { get; set; }
         public string city { get; set; }
         public int pincode { get; set; }
+        public int? addressId { get; set; }
+
         
 
     }

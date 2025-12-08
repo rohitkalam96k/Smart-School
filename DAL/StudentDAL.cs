@@ -92,8 +92,9 @@ namespace DAL
                             category = reader["std_category"].ToString(),
                             caste = reader["std_cast"].ToString(),
                             mothertongue = reader["std_mothertoung"].ToString(),
-                            addressId = reader["fk_std_addressid"] as int?
-                        };
+                            addressId = reader["fk_std_addressid"] as int?,
+
+                        }; 
                     }
                 }
             }

@@ -11,7 +11,6 @@ namespace Models
          public string firstName { get; set; }
          public string middleName { get; set; }
          public string lastName { get; set; }
-
          public DateTime dob { get; set; }
          public string gender { get; set; }
          public string photo { get; set; }
