@@ -78,17 +78,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Staffdashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staffdashboard.Designer.cs">
-      <DependentUpon>Staffdashboard.cs</DependentUpon>
-    </Compile>
+
     <Compile Include="StdList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +144,12 @@
     <EmbeddedResource Include="Staffdashboard.resx">
       <DependentUpon>Staffdashboard.cs</DependentUpon>
     </EmbeddedResource>
+
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+
     <EmbeddedResource Include="StdList.resx">
       <DependentUpon>StdList.cs</DependentUpon>
     </EmbeddedResource>

@@ -17,9 +17,6 @@ namespace SmartSchoolUI
 
         StudentRegistrationBLL _bll = new StudentRegistrationBLL();
 
-
-
-
         public StdRegister()
         {
             InitializeComponent();
@@ -83,12 +80,8 @@ namespace SmartSchoolUI
                 student.gender = "Female";
             else if (rdoOther.Checked)
                 student.gender = "Other";
-            else if (rdoMale.Checked)
-                student.gender = "M";
-            else if (rdoFemale.Checked)
-                student.gender = "F";
-            else if (rdoOther.Checked)
-                student.gender = "O";
+
+        
 
 
             // Date of Birth
@@ -110,7 +103,7 @@ namespace SmartSchoolUI
             // Optional fields
             student.mothertongue = ""; // Set if you have a control for this
             student.photo = "";        // Set if you have a photo path or upload logic
-            student.addressId = null;  // Set if you generate or fetch address ID elsewhere
+            //student.addressId = null;  // Set if you generate or fetch address ID elsewhere
 
 
             //photo path
@@ -147,6 +140,7 @@ namespace SmartSchoolUI
             // ComboBoxes
             cmbCategory.SelectedIndex = -1;
             cmbState.SelectedIndex = -1;
+
         }
 
         // Clear all Fields
@@ -204,16 +198,13 @@ namespace SmartSchoolUI
             Console.WriteLine("Caste: " + student.caste);
             Console.WriteLine("Mother Tongue: " + student.mothertongue);
             Console.WriteLine("Photo Path: " + student.photo);
-            Console.WriteLine("Address ID: " + (student.addressId.HasValue ? student.addressId.Value.ToString() : ""));
-            string result = _bll.AddStudent(student);
-            MessageBox.Show(result);
 
-            //ClearAllFields();
-
+      
         }
 
         private void StdRegister_Load(object sender, EventArgs e)
         {
+        
 
         }
 

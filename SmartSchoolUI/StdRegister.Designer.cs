@@ -76,8 +76,10 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(475, 180);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
+
+            this.btnBrowse.Location = new System.Drawing.Point(812, 180);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(82, 26);
             this.btnBrowse.TabIndex = 0;
@@ -87,9 +89,10 @@
             // 
             // picPhoto
             // 
-            this.picPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picPhoto.Location = new System.Drawing.Point(464, 45);
-            this.picPhoto.Margin = new System.Windows.Forms.Padding(2);
+
+            this.picPhoto.Location = new System.Drawing.Point(799, 46);
+            this.picPhoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.picPhoto.Name = "picPhoto";
             this.picPhoto.Size = new System.Drawing.Size(105, 130);
             this.picPhoto.TabIndex = 1;
@@ -98,7 +101,9 @@
             // txtAbc
             // 
             this.txtAbc.Location = new System.Drawing.Point(64, 30);
-            this.txtAbc.Margin = new System.Windows.Forms.Padding(2);
+
+            this.txtAbc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtAbc.MaxLength = 12;
             this.txtAbc.Name = "txtAbc";
             this.txtAbc.Size = new System.Drawing.Size(76, 20);
@@ -108,7 +113,9 @@
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(65, 92);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
+
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtFirstName.MaxLength = 40;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(76, 20);
@@ -117,7 +124,8 @@
             // txtMiddleName
             // 
             this.txtMiddleName.Location = new System.Drawing.Point(151, 92);
-            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2);
+
+            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiddleName.MaxLength = 40;
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.Size = new System.Drawing.Size(76, 20);
@@ -126,7 +134,8 @@
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(248, 92);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
+
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLastName.MaxLength = 40;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(76, 20);
@@ -138,9 +147,10 @@
             this.grpGender.Controls.Add(this.rdoFemale);
             this.grpGender.Controls.Add(this.rdoMale);
             this.grpGender.Location = new System.Drawing.Point(65, 180);
-            this.grpGender.Margin = new System.Windows.Forms.Padding(2);
+
+            this.grpGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpGender.Name = "grpGender";
-            this.grpGender.Padding = new System.Windows.Forms.Padding(2);
+            this.grpGender.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpGender.Size = new System.Drawing.Size(248, 54);
             this.grpGender.TabIndex = 3;
             this.grpGender.TabStop = false;
@@ -150,42 +160,45 @@
             // 
             this.rdoOther.AutoSize = true;
             this.rdoOther.Location = new System.Drawing.Point(164, 29);
-            this.rdoOther.Margin = new System.Windows.Forms.Padding(2);
+
+            this.rdoOther.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoOther.Name = "rdoOther";
-            this.rdoOther.Size = new System.Drawing.Size(33, 17);
+            this.rdoOther.Size = new System.Drawing.Size(51, 17);
             this.rdoOther.TabIndex = 1;
             this.rdoOther.TabStop = true;
-            this.rdoOther.Text = "O";
+            this.rdoOther.Text = "Other";
             this.rdoOther.UseVisualStyleBackColor = true;
             // 
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
             this.rdoFemale.Location = new System.Drawing.Point(84, 32);
-            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
+
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(31, 17);
+            this.rdoFemale.Size = new System.Drawing.Size(59, 17);
             this.rdoFemale.TabIndex = 1;
             this.rdoFemale.TabStop = true;
-            this.rdoFemale.Text = "F";
+            this.rdoFemale.Text = "Female";
             this.rdoFemale.UseVisualStyleBackColor = true;
             // 
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
             this.rdoMale.Location = new System.Drawing.Point(28, 29);
-            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
+
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(34, 17);
+            this.rdoMale.Size = new System.Drawing.Size(48, 17);
             this.rdoMale.TabIndex = 0;
             this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "M";
+            this.rdoMale.Text = "Male";
             this.rdoMale.UseVisualStyleBackColor = true;
             // 
             // txtMotherName
             // 
             this.txtMotherName.Location = new System.Drawing.Point(65, 123);
-            this.txtMotherName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMotherName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMotherName.MaxLength = 40;
             this.txtMotherName.Name = "txtMotherName";
             this.txtMotherName.Size = new System.Drawing.Size(76, 20);
@@ -194,7 +207,7 @@
             // txtAdharCard
             // 
             this.txtAdharCard.Location = new System.Drawing.Point(238, 30);
-            this.txtAdharCard.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAdharCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAdharCard.MaxLength = 12;
             this.txtAdharCard.Name = "txtAdharCard";
             this.txtAdharCard.Size = new System.Drawing.Size(76, 20);
@@ -205,7 +218,7 @@
             // 
             this.dtpDob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDob.Location = new System.Drawing.Point(65, 158);
-            this.dtpDob.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDob.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dtpDob.Name = "dtpDob";
             this.dtpDob.Size = new System.Drawing.Size(84, 20);
@@ -214,7 +227,7 @@
             // txtStdMob
             // 
             this.txtStdMob.Location = new System.Drawing.Point(170, 278);
-            this.txtStdMob.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStdMob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStdMob.MaxLength = 10;
             this.txtStdMob.Name = "txtStdMob";
             this.txtStdMob.Size = new System.Drawing.Size(76, 20);
@@ -224,7 +237,7 @@
             // txtParentMob
             // 
             this.txtParentMob.Location = new System.Drawing.Point(52, 278);
-            this.txtParentMob.Margin = new System.Windows.Forms.Padding(2);
+            this.txtParentMob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtParentMob.MaxLength = 10;
             this.txtParentMob.Name = "txtParentMob";
             this.txtParentMob.Size = new System.Drawing.Size(76, 20);
@@ -241,7 +254,7 @@
             "Other Backward Classes (OBC) ",
             "Economically Weaker Section (EWS)"});
             this.cmbCategory.Location = new System.Drawing.Point(56, 340);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(92, 21);
             this.cmbCategory.TabIndex = 5;
@@ -279,7 +292,7 @@
             "Uttarakhand ",
             "West Bengal"});
             this.cmbState.Location = new System.Drawing.Point(56, 396);
-            this.cmbState.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbState.Name = "cmbState";
             this.cmbState.Size = new System.Drawing.Size(92, 21);
             this.cmbState.TabIndex = 5;
@@ -287,7 +300,7 @@
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(151, 397);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCity.MaxLength = 40;
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(132, 20);
@@ -296,7 +309,7 @@
             // txtPin
             // 
             this.txtPin.Location = new System.Drawing.Point(286, 397);
-            this.txtPin.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPin.MaxLength = 6;
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(132, 20);
@@ -306,7 +319,7 @@
             // txtStreet
             // 
             this.txtStreet.Location = new System.Drawing.Point(65, 467);
-            this.txtStreet.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStreet.MaxLength = 255;
             this.txtStreet.Multiline = true;
             this.txtStreet.Name = "txtStreet";
@@ -316,7 +329,7 @@
             // txtStdEmail
             // 
             this.txtStdEmail.Location = new System.Drawing.Point(286, 278);
-            this.txtStdEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStdEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStdEmail.MaxLength = 255;
             this.txtStdEmail.Name = "txtStdEmail";
             this.txtStdEmail.Size = new System.Drawing.Size(76, 20);
@@ -325,7 +338,7 @@
             // txtCast
             // 
             this.txtCast.Location = new System.Drawing.Point(170, 340);
-            this.txtCast.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCast.MaxLength = 40;
             this.txtCast.Name = "txtCast";
             this.txtCast.Size = new System.Drawing.Size(76, 20);
@@ -494,7 +507,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(461, 37);
+            this.label17.Location = new System.Drawing.Point(796, 21);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 13);
@@ -503,8 +516,8 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(544, 467);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegister.Location = new System.Drawing.Point(634, 466);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(86, 26);
             this.btnRegister.TabIndex = 8;
@@ -514,8 +527,8 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(426, 467);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Location = new System.Drawing.Point(529, 466);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(86, 26);
             this.btnClear.TabIndex = 8;
@@ -525,8 +538,9 @@
             // 
             // txtPath
             // 
-            this.txtPath.Location = new System.Drawing.Point(464, 214);
-            this.txtPath.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPath.Location = new System.Drawing.Point(799, 217);
+            this.txtPath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtPath.Name = "txtPath";
             this.txtPath.ReadOnly = true;
             this.txtPath.Size = new System.Drawing.Size(106, 20);
@@ -576,7 +590,7 @@
             this.Controls.Add(this.txtAbc);
             this.Controls.Add(this.picPhoto);
             this.Controls.Add(this.btnBrowse);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StdRegister";
             this.Text = "Student Register";
             this.Load += new System.EventHandler(this.StdRegister_Load);
