@@ -91,8 +91,9 @@ namespace DAL
                             religion = reader["std_religion"].ToString(),
                             category = reader["std_category"].ToString(),
                             caste = reader["std_cast"].ToString(),
-                            mothertongue = reader["std_mothertoung"].ToString(),
-                            addressId = reader["fk_std_addressid"] as int?
+
+                            mothertongue = reader["std_mothertoung"].ToString()
+                            
                         };
                     }
                 }
@@ -132,7 +133,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@cat", s1.category);
                 cmd.Parameters.AddWithValue("@caste", s1.caste);
                 cmd.Parameters.AddWithValue("@mtng", s1.mothertongue);
-                cmd.Parameters.AddWithValue("@addid", s1.addressId);
+                
 
                 return cmd.ExecuteNonQuery() > 0;
             }

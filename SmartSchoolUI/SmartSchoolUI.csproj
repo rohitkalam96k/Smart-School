@@ -46,14 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcademicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcademicData.Designer.cs">
+      <DependentUpon>AcademicData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainprincipledashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainprincipledashboard.Designer.cs">
+      <DependentUpon>Mainprincipledashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="StdList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,24 +91,87 @@
     <Compile Include="StdRegister.Designer.cs">
       <DependentUpon>StdRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDashboard.Designer.cs">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDocuments.Designer.cs">
+      <DependentUpon>StudentDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFees.Designer.cs">
+      <DependentUpon>StudentFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMarks.Designer.cs">
+      <DependentUpon>StudentMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacherdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacherdashboard.Designer.cs">
+      <DependentUpon>Teacherdashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcademicData.resx">
+      <DependentUpon>AcademicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainprincipledashboard.resx">
+      <DependentUpon>Mainprincipledashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staffdashboard.resx">
+      <DependentUpon>Staffdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="StdList.resx">
       <DependentUpon>StdList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StdRegister.resx">
       <DependentUpon>StdRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDocuments.resx">
+      <DependentUpon>StudentDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFees.resx">
+      <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMarks.resx">
+      <DependentUpon>StudentMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacherdashboard.resx">
+      <DependentUpon>Teacherdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +191,21 @@
       <Project>{9CE60D07-D367-4BA8-BFBE-CF5598FC414D}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentsimple.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
